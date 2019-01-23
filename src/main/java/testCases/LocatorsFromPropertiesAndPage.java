@@ -25,7 +25,7 @@ import Pages.*;
  * @author rahilsha
  *
  */
-public class testCase2 {
+public class LocatorsFromPropertiesAndPage {
 
 	BrowserFactory b= new BrowserFactory();
 	WebDriver driver;
