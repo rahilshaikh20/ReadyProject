@@ -63,10 +63,10 @@ public class BrowserFactory {
 		}
 
 		else if (Browsername.equalsIgnoreCase("Chrome")) {
-			ChromeOptions options = new ChromeOptions();
-			options.addArguments("--disable-notifications");
+			//ChromeOptions options = new ChromeOptions();
+			//options.addArguments("--disable-notifications");
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver(options);
+			driver = new ChromeDriver();
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			// return driver;
 		}

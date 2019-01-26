@@ -27,7 +27,7 @@ public class screenshotWindowHandle
 	WebDriver driver;
 	Properties prop1 = null;
 	PageOne p = new PageOne(); //to access locators defined in PageOne class
-	String input= "ronaldo"; //input to be searched
+	String input= "Pogba"; //input to be searched
 	
 	 	
 	@Test	 
@@ -36,24 +36,24 @@ public class screenshotWindowHandle
 	   {
 		driver= b.loadDriver();
 		 prop1= b.loadproperties();
-		 b.loadURL1();
+		 b.loadURL();
 		 //COde 
 		 driver.findElement(p.text_field).sendKeys(input); //FINDING LOCATORS FROM PageOne
 		 driver.findElement(By.xpath(prop1.getProperty("LOC1"))).click();//FINDING LOCATORS FROM PROPERTIES FILE
 		 Thread.sleep(3000);
 		 
 		 
-		 for (int i=0; i<3; i++) //Multiple screenshots 
+		 for (int i=0; i<2; i++) //Multiple screenshots 
 			 
 		 {
 			 
 		 File screenshotFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		 FileUtils.copyFile(screenshotFile, new File("D:\\Rahil_ss\\image_"+i+".png"));
+		 FileUtils.copyFile(screenshotFile, new File("C:\\Rahil_ss\\image_"+i+".png"));
 		 
 		 }
 		 
 		
-		 driver.close(); 
+		// driver.close(); 
 		 driver.quit();			
 	   }
 
