@@ -7,13 +7,13 @@ import java.util.ArrayList;
 import java.util.Hashtable;
 import java.util.List;
 import java.util.Properties;
-
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.apache.xerces.impl.xpath.XPath;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -39,6 +39,11 @@ public class ReadAndWriteToExcel {
 	  bf.loadURL();
 	  
 	  driver.findElement(By.name("q")).sendKeys(testData.get("name"));//Use the header from excel to input values
+	
+	  Thread.sleep(3000);
+	  driver.findElement(By.name("q")).sendKeys(Keys.TAB);//Use the header from excel to input values
+	  
+	  
 	  driver.findElement(By.xpath("(//*[@name='btnK'])[2]")).click();
 	  
 	  String str=driver.getTitle(); //Save the output to be written in the string

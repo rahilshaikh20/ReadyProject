@@ -31,21 +31,21 @@ public class TestUtil
 		//@@@@@@@@@@ Holds the starting row number of test Data in the data sheet @@@@@@@@@@@@@//
 		currtestrowNum = testStartNum+1;
 		
-		System.out.println("test data header starts on row"+(testStartNum));
+		System.out.println("Test data header starts on row "+(testStartNum));
 
 		
 		while(! (xls.getCellData("Data",maxtestDataColNum, testStartNum+1).equals(""))){
 			maxtestDataColNum++;
 		}
 		
-		System.out.println("the number of colums for "+testCase+" is "+maxtestDataColNum);
+		System.out.println("Number of columns for "+testCase+" is "+maxtestDataColNum);
 		
 		while(! (xls.getCellData("Data", 0, currtestrowNum+1).equals(""))){
 			maxtestDataRowNum++;
 			currtestrowNum++;
 		}
 		
-		System.out.println("the number of data rows for "+testCase+" is "+maxtestDataRowNum);
+		System.out.println("Number of data rows for "+testCase+" is "+maxtestDataRowNum);
 		
 		testData = new Object[maxtestDataRowNum][1];
 		

@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Rahil\AppData\Local\Temp\testng-eclipse--166489140\testng-customsuite.xml</span>
+                    <span>C:\Users\Rahil\AppData\Local\Temp\testng-eclipse--513697998\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +102,17 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testCases.screenshotWindowHandle" hash-for-method="testcase_three">testcase_three</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testCases.ReadAndWriteToExcel" hash-for-method="Testcase1({name=keval, browser=ff, datarow=1.0})">Testcase1({name=keval, browser=ff, datarow=1.0})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testCases.ReadAndWriteToExcel" hash-for-method="Testcase1({name=dad, browser=jj, datarow=3.0})">Testcase1({name=dad, browser=jj, datarow=3.0})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testCases.ReadAndWriteToExcel" hash-for-method="Testcase1({name=rahil, browser=ff, datarow=2.0})">Testcase1({name=rahil, browser=ff, datarow=2.0})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -120,14 +130,31 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testCases.screenshotWindowHandle</span>
+              <span class="class-name">testCases.ReadAndWriteToExcel</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testcase_three">
-                  </a> <!-- testcase_three -->
-                  <span class="method-name">testcase_three</span>
+                  <a name="Testcase1({name=keval, browser=ff, datarow=1.0})">
+                  </a> <!-- Testcase1({name=keval, browser=ff, datarow=1.0}) -->
+                  <span class="method-name">Testcase1</span>
+                  <span class="parameters">({name=keval, browser=ff, datarow=1.0})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Testcase1({name=dad, browser=jj, datarow=3.0})">
+                  </a> <!-- Testcase1({name=dad, browser=jj, datarow=3.0}) -->
+                  <span class="method-name">Testcase1</span>
+                  <span class="parameters">({name=dad, browser=jj, datarow=3.0})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Testcase1({name=rahil, browser=ff, datarow=2.0})">
+                  </a> <!-- Testcase1({name=rahil, browser=ff, datarow=2.0}) -->
+                  <span class="method-name">Testcase1</span>
+                  <span class="parameters">({name=rahil, browser=ff, datarow=2.0})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -135,7 +162,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Rahil\AppData\Local\Temp\testng-eclipse--166489140\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Rahil\AppData\Local\Temp\testng-eclipse--513697998\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -144,7 +171,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testCases.screenshotWindowHandle&quot;/&gt;
+      &lt;class name=&quot;testCases.ReadAndWriteToExcel&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -184,16 +211,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testcase_three')
-data.setCell(0, 2, 'testCases.screenshotWindowHandle')
-data.setCell(0, 3, 17147);
+data.setCell(0, 1, 'Testcase1')
+data.setCell(0, 2, 'testCases.ReadAndWriteToExcel')
+data.setCell(0, 3, 18004);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'Testcase1')
+data.setCell(1, 2, 'testCases.ReadAndWriteToExcel')
+data.setCell(1, 3, 14379);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Testcase1')
+data.setCell(2, 2, 'testCases.ReadAndWriteToExcel')
+data.setCell(2, 3, 13483);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 17 seconds</span>
+              <span class="suite-total-time">Total running time: 45 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -219,10 +254,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testCases.screenshotWindowHandle</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testCases.ReadAndWriteToExcel</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">testcase_three</span>
+                <span class="method-name">Testcase1({name=keval, browser=ff, datarow=1.0})</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Testcase1({name=rahil, browser=ff, datarow=2.0})</span>
+                <span class="method-start">18007 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Testcase1({name=dad, browser=jj, datarow=3.0})</span>
+                <span class="method-start">32387 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
