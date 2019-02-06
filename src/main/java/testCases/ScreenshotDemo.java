@@ -20,7 +20,7 @@ import Pages.*;
  * @author rahilsha
  *
  */
-public class screenshotWindowHandle
+public class ScreenshotDemo
 {
 
 	BrowserFactory b= new BrowserFactory();
