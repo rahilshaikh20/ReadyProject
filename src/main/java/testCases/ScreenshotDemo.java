@@ -54,7 +54,10 @@ public class ScreenshotDemo
 		 
 		
 		// driver.close(); 
-		 driver.quit();			
+		 driver.quit();		
+		 
+		 Runtime.getRuntime().exec("taskkill /im chromedriver.exe /f");
+		Runtime.getRuntime().exec("taskkill /F /IM chromedriver.exe /T");
 	   }
 
 }
