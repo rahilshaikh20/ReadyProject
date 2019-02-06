@@ -23,24 +23,23 @@ public class ActionClassTest {
 	   {
 		driver= b.loadDriver();
 		 prop= b.loadproperties();
-		 b.loadURL1();
+		 b.loadURL();
+		 			 
+		 WebElement SearchByVoice = driver.findElement(By.xpath("//*[@aria-label='Search by voice']//span[@class]"));
+		 WebElement GmailLink = driver.findElement(By.linkText("Gmail"));
 		 
-		 Thread.sleep(8000);
-		 
-		 WebElement elePrivacy = driver.findElement(By.xpath("(//a[contains(text(),'Privacy')])[2]"));
 	
-		 //elePrivacy.click();
+		Actions action=new Actions(driver);
 		 
-		 Actions action=new Actions(driver);
-		 action.moveToElement(elePrivacy).click().perform();
+		 action.moveToElement(SearchByVoice).build().perform(); //To hover over element
+		 action.moveToElement(GmailLink).click().perform(); //To click element using action
 		 
+		 Thread.sleep(5000);
+		 driver.navigate().back();
+		 Thread.sleep(3000);
 		 
-		/*
+		((JavascriptExecutor)driver).executeScript("arguments[0].click();", GmailLink); //Clicking using java script
 		
-		((JavascriptExecutor)driver).executeScript("arguments[0].click();", elePrivacy);
-		Thread.sleep(3000); //Clicking using java script
-		
-		*/
 		 Thread.sleep(3000);
 		 
 		driver.quit();
