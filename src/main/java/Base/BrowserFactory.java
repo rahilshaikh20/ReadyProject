@@ -1,7 +1,7 @@
 /**
  * 
  */
-package HairAdvisor;
+package Base;
 
 import java.io.FileInputStream;
 import java.io.IOException;

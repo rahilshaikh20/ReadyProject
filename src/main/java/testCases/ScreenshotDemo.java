@@ -11,7 +11,8 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
-import HairAdvisor.BrowserFactory;
+
+import Base.BrowserFactory;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import java.io.IOException;
 import java.util.Properties;

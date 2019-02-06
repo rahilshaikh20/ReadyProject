@@ -13,7 +13,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import HairAdvisor.BrowserFactory;
+
+import Base.BrowserFactory;
 
 public class NewTest {
 

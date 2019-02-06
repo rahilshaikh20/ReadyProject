@@ -1,46 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="46759" started-at="2019-01-26T10:07:54Z" finished-at="2019-01-26T10:08:41Z">
+  <suite name="Default suite" duration-ms="61656" started-at="2019-02-06T10:21:01Z" finished-at="2019-02-06T10:22:02Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="46759" started-at="2019-01-26T10:07:54Z" finished-at="2019-01-26T10:08:41Z">
-      <class name="testCases.ReadAndWriteToExcel">
-        <test-method status="PASS" signature="Testcase1(java.util.Hashtable)[pri:0, instance:testCases.ReadAndWriteToExcel@6d4b1c02]" name="Testcase1" duration-ms="18004" started-at="2019-01-26T15:37:55Z" data-provider="getData" finished-at="2019-01-26T15:38:13Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{name=keval, browser=ff, datarow=1.0}]]>
-              </value>
-            </param>
-          </params>
+    <test name="Default test" duration-ms="61656" started-at="2019-02-06T10:21:01Z" finished-at="2019-02-06T10:22:02Z">
+      <class name="testCases.ScreenshotDemo">
+        <test-method status="PASS" signature="testcase_three()[pri:0, instance:testCases.ScreenshotDemo@78ac1102]" name="testcase_three" duration-ms="61629" started-at="2019-02-06T10:21:01Z" finished-at="2019-02-06T10:22:02Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Testcase1 -->
-        <test-method status="PASS" signature="Testcase1(java.util.Hashtable)[pri:0, instance:testCases.ReadAndWriteToExcel@6d4b1c02]" name="Testcase1" duration-ms="14379" started-at="2019-01-26T15:38:13Z" data-provider="getData" finished-at="2019-01-26T15:38:27Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{name=rahil, browser=ff, datarow=2.0}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Testcase1 -->
-        <test-method status="PASS" signature="Testcase1(java.util.Hashtable)[pri:0, instance:testCases.ReadAndWriteToExcel@6d4b1c02]" name="Testcase1" duration-ms="13483" started-at="2019-01-26T15:38:27Z" data-provider="getData" finished-at="2019-01-26T15:38:41Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{name=dad, browser=jj, datarow=3.0}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Testcase1 -->
-      </class> <!-- testCases.ReadAndWriteToExcel -->
+        </test-method> <!-- testcase_three -->
+      </class> <!-- testCases.ScreenshotDemo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

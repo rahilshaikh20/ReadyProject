@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
-import HairAdvisor.BrowserFactory;
+import Base.BrowserFactory;
 
 public class ActionClassTest {
 	
