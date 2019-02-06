@@ -4,6 +4,8 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
@@ -26,9 +28,18 @@ public class AlertsDemo {
 	  Submit.click();
 	  Thread.sleep(2000);
 	  
-      // Switching to Alert        
-      Alert alert = driver.switchTo().alert();		
-      		
+	  WebDriverWait wait = new WebDriverWait(driver, 10);
+	  
+	  //Check if alert is present
+      if(wait.until(ExpectedConditions.alertIsPresent())==null){
+            System.out.println("alert was not present");
+      }
+      else
+      {
+    	  // Switching to Alert    
+       Alert alert = driver.switchTo().alert();
+      System.out.println("alert present");
+     	  	
       // Capturing alert message.    
       String alertMessage= driver.switchTo().alert().getText();		
       		
@@ -44,8 +55,10 @@ public class AlertsDemo {
 		
       // Displaying updated alert message		
       System.out.println(alertMessage1);	
-      
       }
+      
+      
+ }
   
   @AfterTest
   public void AfterTest()

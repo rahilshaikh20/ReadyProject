@@ -27,12 +27,13 @@ public class ActionClassTest {
 		 			 
 		 WebElement SearchByVoice = driver.findElement(By.xpath("//*[@aria-label='Search by voice']//span[@class]"));
 		 WebElement GmailLink = driver.findElement(By.linkText("Gmail"));
-		 
-	
-		Actions action=new Actions(driver);
-		 
+		 	
+		 Actions action=new Actions(driver);
+		
 		 action.moveToElement(SearchByVoice).build().perform(); //To hover over element
 		 action.moveToElement(GmailLink).click().perform(); //To click element using action
+		 action.dragAndDrop(SearchByVoice, GmailLink).build().perform(); //to drag and drop
+		 action.contextClick(GmailLink).perform(); //Right click
 		 
 		 Thread.sleep(5000);
 		 driver.navigate().back();
@@ -42,7 +43,7 @@ public class ActionClassTest {
 		
 		 Thread.sleep(3000);
 		 
-		driver.quit();
+		 driver.quit();
 	}
 
 }
