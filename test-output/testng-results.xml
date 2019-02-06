@@ -1,17 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="61656" started-at="2019-02-06T10:21:01Z" finished-at="2019-02-06T10:22:02Z">
+  <suite name="Default suite" duration-ms="69619" started-at="2019-02-06T11:29:49Z" finished-at="2019-02-06T11:30:59Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="61656" started-at="2019-02-06T10:21:01Z" finished-at="2019-02-06T10:22:02Z">
-      <class name="testCases.ScreenshotDemo">
-        <test-method status="PASS" signature="testcase_three()[pri:0, instance:testCases.ScreenshotDemo@78ac1102]" name="testcase_three" duration-ms="61629" started-at="2019-02-06T10:21:01Z" finished-at="2019-02-06T10:22:02Z">
+    <test name="Default test" duration-ms="69619" started-at="2019-02-06T11:29:49Z" finished-at="2019-02-06T11:30:59Z">
+      <class name="testCases.ReadAndWriteToExcel">
+        <test-method status="PASS" signature="Testcase1(java.util.Hashtable)[pri:0, instance:testCases.ReadAndWriteToExcel@cb0ed20]" name="Testcase1" duration-ms="25137" started-at="2019-02-06T11:29:50Z" data-provider="getData" finished-at="2019-02-06T11:30:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=keval, browser=ff, datarow=1.0}]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testcase_three -->
-      </class> <!-- testCases.ScreenshotDemo -->
+        </test-method> <!-- Testcase1 -->
+        <test-method status="PASS" signature="Testcase1(java.util.Hashtable)[pri:0, instance:testCases.ReadAndWriteToExcel@cb0ed20]" name="Testcase1" duration-ms="22705" started-at="2019-02-06T11:30:15Z" data-provider="getData" finished-at="2019-02-06T11:30:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=rahil, browser=ff, datarow=2.0}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Testcase1 -->
+        <test-method status="PASS" signature="Testcase1(java.util.Hashtable)[pri:0, instance:testCases.ReadAndWriteToExcel@cb0ed20]" name="Testcase1" duration-ms="20971" started-at="2019-02-06T11:30:38Z" data-provider="getData" finished-at="2019-02-06T11:30:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=dad, browser=jj, datarow=3.0}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Testcase1 -->
+      </class> <!-- testCases.ReadAndWriteToExcel -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

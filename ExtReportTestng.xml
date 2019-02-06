@@ -3,9 +3,8 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="testCases.ReadWriteSample"/>
-      <class name="testCases.NewTest"/>
-      <class name="testCases.ReadAndWriteToExcel"/>
+      <class name="extentReports.NewTest"/>
+      <class name="extentReports.NewTest1"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
