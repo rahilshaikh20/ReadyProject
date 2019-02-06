@@ -18,7 +18,12 @@ class NewTest1 extends ExtReportDemo
 	        System.out.println("This is printed");
 	    }
 	     
-	
+	    @Test
+	    public void TC3()
+	    {
+	        test = extent.createTest("Rahil_TestCase_3 ");
+	        System.out.println("This is also printed");
+	    }
 		
 	}
 
