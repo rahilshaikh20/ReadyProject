@@ -2,3 +2,5 @@ target/
 .settings/
 test-output/
 .classpath
+
+.metadata/
