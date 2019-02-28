@@ -54,22 +54,25 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 	    //Read sheet inside the workbook by its name
 
-	    Sheet guru99Sheet = guru99Workbook.getSheet(sheetName);
+	    Sheet sheet = guru99Workbook.getSheet(sheetName);
 	    
 	   // cell.setCellType(Cell.CELL_TYPE_STRING);
 
 	    //Find number of rows in excel file
 	    
-	    int rowCount = guru99Sheet.getLastRowNum()-guru99Sheet.getFirstRowNum();
+	    int rowCount = sheet.getLastRowNum()-sheet.getFirstRowNum();
 	    
-	    System.out.println(guru99Sheet.getFirstRowNum());
+	    System.out.println(sheet.getFirstRowNum());
+	    System.out.println(sheet.getLastRowNum());
 	    
-	 
+	    Row index = sheet.getRow(0);
+	   
+	    
 	    //Create a loop over all the rows of excel file to read it
 
-	    for (int i = guru99Sheet.getFirstRowNum(); i <= guru99Sheet.getLastRowNum(); i++) {
+	    for (int i = sheet.getFirstRowNum(); i <= sheet.getLastRowNum(); i++) {
 
-	        Row row = guru99Sheet.getRow(i);
+	        Row row = sheet.getRow(i);
 	        
 	        
 	       //Create a loop to print cell values in a row
@@ -92,8 +95,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 	        	else*/
 	        
 	        		String data=row.getCell(j).getStringCellValue();
-	        		System.out.print(data+" || ");
-	        
+	        		System.out.print(data+" || ");   
 
 	        }
 

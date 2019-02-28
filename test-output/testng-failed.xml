@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="extentReports.NewTest">
+      <class name="testCases.RestAssuredSample">
         <methods>
-          <include name="getResult"/>
-          <include name="functionality2Test2"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="functionality2Test3"/>
+          <include name="beforeTest"/>
+          <include name="GetWeatherDetails"/>
         </methods>
-      </class> <!-- extentReports.NewTest -->
+      </class> <!-- testCases.RestAssuredSample -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

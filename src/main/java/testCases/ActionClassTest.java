@@ -44,6 +44,8 @@ public class ActionClassTest {
 		 Thread.sleep(3000);
 		 
 		 driver.quit();
+		 
+		 
 	}
 
 }
