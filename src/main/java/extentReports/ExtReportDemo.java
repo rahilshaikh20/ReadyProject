@@ -35,7 +35,7 @@ public class ExtReportDemo
         htmlReporter.config().setDocumentTitle("AutomationTesting.in Demo Report");
         htmlReporter.config().setReportName("My Own Report");
         htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP);
-        htmlReporter.config().setTheme(Theme.DARK);
+        htmlReporter.config().setTheme(Theme.STANDARD);
     }
      
     @AfterMethod

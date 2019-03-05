@@ -10,11 +10,7 @@ public class Abs1 extends AbsSample {
 		System.out.println("Fun printed");
 	}
 
-	void fun1()
-	{
-		System.out.println("Abs1");
-		
-		}
+	
 	
 	int factorial (int n)
 	
@@ -35,6 +31,7 @@ public class Abs1 extends AbsSample {
 		
 		Abs1 a = new Abs1();
 		
+		a.fun1();
 		System.out.println(a.factorial(5));
 		
 	

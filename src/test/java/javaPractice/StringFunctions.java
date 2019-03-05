@@ -8,7 +8,7 @@ public class StringFunctions {
 
 
 		String S1 ="This is my place";
-		String S2 = "zA gffg";
+		String S2 = S1;
 		
 	
 		S2.split("g");
@@ -48,6 +48,14 @@ public class StringFunctions {
 		{
 			System.out.print(words[i]+ " ");
 		}
+
+		StringBuffer demo1 = new StringBuffer("Hello") ;
+		// The above object stored in heap and its value can be changed .
+		demo1=new StringBuffer("Bye");
+		demo1 =new StringBuffer("Welcome");
+		
+		System.out.println();
+		System.out.println(demo1);
 
 }
 	}

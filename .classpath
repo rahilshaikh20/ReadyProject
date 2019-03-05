@@ -8,9 +8,9 @@
 	</classpathentry>
 	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
 		<attributes>
+			<attribute name="test" value="true"/>
 			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="test" value="true"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5">
@@ -29,5 +29,14 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="D:/Users/rahilsha/Desktop/Temp/CucumberJars/cobertura-2.1.1.jar"/>
+	<classpathentry kind="lib" path="D:/Users/rahilsha/Desktop/Temp/CucumberJars/cucumber-core-1.2.5.jar"/>
+	<classpathentry kind="lib" path="D:/Users/rahilsha/Desktop/Temp/CucumberJars/cucumber-java-1.2.5.jar"/>
+	<classpathentry kind="lib" path="D:/Users/rahilsha/Desktop/Temp/CucumberJars/cucumber-junit-1.2.5.jar"/>
+	<classpathentry kind="lib" path="D:/Users/rahilsha/Desktop/Temp/CucumberJars/cucumber-jvm-deps-1.0.5.jar"/>
+	<classpathentry kind="lib" path="D:/Users/rahilsha/Desktop/Temp/CucumberJars/cucumber-reporting-3.18.0.jar"/>
+	<classpathentry kind="lib" path="D:/Users/rahilsha/Desktop/Temp/CucumberJars/gherkin-2.12.2.jar"/>
+	<classpathentry kind="lib" path="D:/Users/rahilsha/Desktop/Temp/CucumberJars/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="D:/Users/rahilsha/Desktop/Temp/CucumberJars/mockito-all-2.0.2-beta.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

@@ -5,7 +5,8 @@ public class DBConnection
 { 
 	   // JDBC driver name and database URL 
 	   static final String JDBC_DRIVER = "org.h2.Driver";   
-	   static final String DB_URL = "jdbc:h2:~/test";  
+	   static final String DB_URL = "jdbc:h2:file://C:/Temp/H2/ourDB"; 
+	   									
 	   
 	   //  Database credentials 
 	   static final String USER = "sa"; 
@@ -25,14 +26,29 @@ public class DBConnection
 	         //STEP 3: Execute a query 
 	         System.out.println("Creating table in given database..."); 
 	         stmt = conn.createStatement(); 
-	         String sql =  "CREATE TABLE   People " + 
-	            "(id INTEGER not NULL, " + 
-	            " first VARCHAR(255), " +  
-	            " last VARCHAR(255), " +  
-	            " age INTEGER, " +  
-	            " PRIMARY KEY ( id ))";  
-	         stmt.executeUpdate(sql);
-	         System.out.println("Created table in given database..."); 
+	        // String sql =  "CREATE TABLE CHILDREN (id INTEGER not NULL, first VARCHAR(255),last VARCHAR(255),  age INTEGER,PRIMARY KEY ( id ))";  
+	  // String sql = "INSERT INTO CHILDREN VALUES ('14', 'Aftab', 'Shaikh', '22')";
+	      String sql ="SELECT * FROM CHILDREN";
+	         
+	    //stmt.executeUpdate(sql);
+	   
+	       ResultSet rs= stmt.executeQuery(sql);
+	         
+	         while(rs.next()) { 
+	             // Retrieve by column name 
+	             int id  = rs.getInt("ID"); 
+	            int age = rs.getInt("AGE"); 
+	             String first = rs.getString("NAME"); 
+	             //String last = rs.getString("last");  
+	             
+	             // Display values 
+	             System.out.print("ID: " + id); 
+	             System.out.print(", Age: " + age); 
+	             System.out.println(", First: " + first); 
+	             
+	          } 
+	        
+	         //
 	         
 	         // STEP 4: Clean-up environment 
 	         stmt.close(); 
