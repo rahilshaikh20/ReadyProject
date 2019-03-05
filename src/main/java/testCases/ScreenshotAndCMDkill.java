@@ -21,7 +21,7 @@ import Pages.*;
  * @author rahilsha
  *
  */
-public class ScreenshotDemo
+public class ScreenshotAndCMDkill
 {
 
 	BrowserFactory b= new BrowserFactory();
@@ -57,7 +57,7 @@ public class ScreenshotDemo
 		// driver.close(); 
 		 driver.quit();		
 		 
-		 Runtime.getRuntime().exec("taskkill /im chromedriver.exe /f");
+		Runtime.getRuntime().exec("taskkill /im chromedriver.exe /f");
 		Runtime.getRuntime().exec("taskkill /F /IM chromedriver.exe /T");
 	   }
 
