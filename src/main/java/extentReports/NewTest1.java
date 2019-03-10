@@ -23,6 +23,8 @@ class NewTest1 extends ExtReportDemo
 	    {
 	        test = extent.createTest("Rahil_TestCase_3 ");
 	        System.out.println("This is also printed");
+		throw new SkipException("Skipping this exception");
+		
 	    }
 		
 	}
