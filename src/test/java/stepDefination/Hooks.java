@@ -13,7 +13,7 @@ public class Hooks {
 	public static WebDriver driver;
 
 	@Before
-	public static WebDriver Initialize() {
+	public static void Initialize() {
 		
 		if (driver==null)
 		{
@@ -23,8 +23,14 @@ public class Hooks {
 			driver.manage().window().maximize();
 			
 			}
-			return driver;
+			
 	}
+
+    public static WebDriver getDriver() {
+        return driver;
+        // new Test_Steps(driver);
+
+ }
 
 	@After
 	public void TearDown() {

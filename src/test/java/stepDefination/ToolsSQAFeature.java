@@ -8,7 +8,7 @@ import cucumber.api.java.en.Given;
 
 public class ToolsSQAFeature {
 	
-	public static WebDriver driver= Hooks.Initialize();
+	public static WebDriver driver= Hooks.getDriver();
 	
 	@Given("^StackOverflow is launched$")
 	public void stackoverflow_is_launched() throws Throwable {

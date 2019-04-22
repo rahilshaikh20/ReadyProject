@@ -12,7 +12,7 @@ import cucumber.api.java.en.When;
 public class GoogleFeature {
 	
 	
-	public static WebDriver driver= Hooks.Initialize();
+	public static WebDriver driver= Hooks.getDriver();
 	
 	
 	@Given("^google is launched$")
