@@ -1,6 +1,7 @@
 package extentReports;
 import org.testng.annotations.Test;
 import org.testng.Assert;
+import org.testng.SkipException;
 
 class NewTest1 extends ExtReportDemo
 {
