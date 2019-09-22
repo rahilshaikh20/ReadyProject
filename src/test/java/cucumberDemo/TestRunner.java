@@ -37,7 +37,7 @@ public class TestRunner {
 	 public static void writeExtentReport() throws IOException {
 	 
 		
-		Reporter.loadXMLConfig(new File("C:\\Demo\\extent-config.xml")); //path where config xml is kept
+		Reporter.loadXMLConfig(new File("C:\\Users\\rahil.shaikh\\Documents\\SeleniumProjects\\ReadyProject\\extent-config.xml")); //path where config xml is kept
 		
 		//Setting below properties is optional
 		 Reporter.setSystemInfo("User Name", System.getProperty("user.name"));

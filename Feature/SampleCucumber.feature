@@ -4,7 +4,7 @@ Scenario Outline: Scenario
     Given login to the application
     When enter "<Username>" and  "<Password>"
     And User enters "<Age>" and "<Class>" and "<Type>"
-    Then verify the login
+    But verify the login
     
     Examples:
     |Username  		|Password	|Age  |Class  |Type  |
