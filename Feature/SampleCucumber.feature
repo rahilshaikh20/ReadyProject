@@ -1,6 +1,6 @@
 Feature: navigation
 @login
-Scenario Outline: Scenario description
+Scenario Outline: Scenario
     Given login to the application
     When enter "<Username>" and  "<Password>"
     And User enters "<Age>" and "<Class>" and "<Type>"
