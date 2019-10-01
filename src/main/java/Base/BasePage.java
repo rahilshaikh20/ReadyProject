@@ -5,6 +5,8 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 //Singleton approach of creating one instance of Webdriver
 
 public class BasePage {
@@ -14,7 +16,8 @@ public class BasePage {
 	public static WebDriver Initialize() {
 
 		if (driver == null) {
-			System.setProperty("webdriver.chrome.driver", "D:\\Users\\rahilsha\\Downloads\\chromedriver.exe");
+			//System.setProperty("webdriver.chrome.driver", "D:\\Users\\rahilsha\\Downloads\\chromedriver.exe");
+			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);

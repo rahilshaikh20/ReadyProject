@@ -1,6 +1,11 @@
 package extentReports;
 
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
+
+import com.aventstack.extentreports.Status;
+
+import org.junit.AfterClass;
 import org.testng.Assert;
 import org.testng.SkipException;
 
@@ -11,13 +16,20 @@ class NewTest extends ExtReportDemo
 	    {
 	        test = extent.createTest("Shankar");
 	        Assert.assertTrue(1 > 0);
+	        
+	        //Loggers to log data in the report
+	        test.log(Status.INFO, "Test started");
+	        test.log(Status.INFO, "Info logged in report");
+	        
 	    }
 	     
 	    @Test
 	    public void functionality2Test2()
 	    {
 	        test = extent.createTest("functionality2Test2");
+	        test.log(Status.INFO, "Info1");
 	        Assert.assertEquals("Krishna", "Sakinala");
+	        test.log(Status.INFO, "info2");
 	    }
 	     
 	    @Test
@@ -26,12 +38,11 @@ class NewTest extends ExtReportDemo
 	        test = extent.createTest("functionality2Test3");
 	        System.out.println("Hi");
 	        System.out.println("Hello Shankar and Keval");
-	        //Assert.assertNotEquals("Krishna", "Krishna");
 	        throw new SkipException("This is my skipp metho");
-	        
-	        
-	        
+	     
 	    }
+	    
+	  
 		
 	}
 
