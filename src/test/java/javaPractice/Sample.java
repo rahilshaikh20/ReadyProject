@@ -1,21 +1,23 @@
 package javaPractice;
 
+import java.io.IOException;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
 public class Sample {
 
-
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-	
-		
-		char a = 'A';
-		int i = 7;
-		
-		//a=(char)i;
-		i=a;
-		
-		System.out.println("The Ascii cvalue of '"+a+ "' is "+i );
-		System.out.println(a);
+		@Test
+		public void TC_0002() throws IOException 
+		{
+			try {
+				Assert.assertTrue(true);
+				System.out.println(System.getProperty("user.dir") );
+			}
+			catch (Exception e) {
+				System.out.println("print this");
+			}
+			
 		}
 
 }

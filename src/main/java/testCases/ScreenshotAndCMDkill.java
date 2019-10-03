@@ -40,7 +40,7 @@ public class ScreenshotAndCMDkill
 		 b.loadURL();
 		 //COde 
 		 driver.findElement(p.text_field).sendKeys(input); //FINDING LOCATORS FROM PageOne
-		 driver.findElement(By.xpath(prop1.getProperty("LOC1"))).click();//FINDING LOCATORS FROM PROPERTIES FILE
+		 driver.findElement(By.xpath(prop1.getProperty("LOC1"))).click(); //FINDING LOCATORS FROM PROPERTIES FILE
 		 Thread.sleep(3000);
 		 
 		 

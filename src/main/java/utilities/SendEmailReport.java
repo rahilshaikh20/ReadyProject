@@ -26,9 +26,9 @@ public class SendEmailReport {
 		  
 		  HtmlEmail email = new HtmlEmail();
 		  
-		  email.setHostName("mail.diebold.com");
+		  email.setHostName("smtp.gmail.com");
 		  email.setSmtpPort(25);
-		  email.setAuthenticator(new DefaultAuthenticator("rahil.shaikh@dieboldnixdorf.com", "Rehana@11"));
+		  email.setAuthenticator(new DefaultAuthenticator("rahilshaikh20@gmail.com", "Rehana@22"));
 		  
 		  email.addTo("rahilshaikh20@gmail.com","Rahil Ashraf");
 		  email.addTo("rahilshaikh595@yahoo.com","Rahil AS");
@@ -36,7 +36,7 @@ public class SendEmailReport {
 		  
 		  email.setSSLOnConnect(true);
 		  email.setFrom("Report@rahiloptics.org", "System Email ");
-		  email.setSubject("Test email with inline image");
+		  email.setSubject("Test email with attached report");
 		  email.attach(attachment);
 		 		  
 		  // embed the image and get the content id

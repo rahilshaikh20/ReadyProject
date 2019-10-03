@@ -1,7 +1,14 @@
 package Base;
 
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -33,6 +40,22 @@ public class BasePage {
 		driver.quit();
 		driver = null;
 
+	}
+	
+	public static String captureScreenshot() throws IOException
+	{
+		
+		String pattern = "yyyy-MM-dd_HHmmss";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+
+		String date = simpleDateFormat.format(new Date());
+	     	    
+		 File screenshotFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		 FileUtils.copyFile(screenshotFile, new File("C:\\Rahil_ss\\image"+date+".png"));
+		 
+		 return "C:\\Rahil_ss\\image"+date+".png";
+		 
+		 
 	}
 
 }

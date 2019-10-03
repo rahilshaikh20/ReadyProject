@@ -3,15 +3,24 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="extentReports.NewTest">
+      <class name="javaPractice.TC001">
         <methods>
           <include name="getResult"/>
-          <include name="functionality2Test2"/>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="functionality2Test3"/>
+          <include name="TC_0001"/>
+          <include name="TearDown"/>
         </methods>
-      </class> <!-- extentReports.NewTest -->
+      </class> <!-- javaPractice.TC001 -->
+      <class name="javaPractice.TC003">
+        <methods>
+          <include name="TearDown"/>
+          <include name="getResult"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="TC_0003"/>
+        </methods>
+      </class> <!-- javaPractice.TC003 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

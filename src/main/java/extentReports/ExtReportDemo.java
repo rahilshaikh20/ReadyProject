@@ -2,6 +2,7 @@ package extentReports;
 
 import java.io.IOException;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -15,18 +16,24 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
+import Base.BasePage;
+import Base.BrowserFactory;
+import Base.GetScreenShot;
+
 public class ExtReportDemo
 {
     public static ExtentHtmlReporter htmlReporter;
     public static ExtentReports extent;
     public static ExtentTest test;
-     
+   
+         
     @BeforeSuite
     public void setUp()
     {
         htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") +"/test-output/Rahil_Report.html");
         extent = new ExtentReports();
         extent.attachReporter(htmlReporter);
+        
          
         /*extent.setSystemInfo("OS", "Mac Sierra");
         extent.setSystemInfo("Host Name", "Krishna");
@@ -45,9 +52,11 @@ public class ExtReportDemo
     {
         if(result.getStatus() == ITestResult.FAILURE)
         {
+        	String str=BasePage.captureScreenshot();
             test.log(Status.FAIL, MarkupHelper.createLabel(result.getName()+" Test case FAILED due to below issues:", ExtentColor.RED));
             test.fail(result.getThrowable());
-            test.addScreenCaptureFromPath("C:\\Users\\rahil.shaikh\\Pictures\\1.png"); //attaching screenshots to failed test cases
+            test.addScreenCaptureFromPath(str); //attaching screenshots to failed test cases
+          
             
         }
         else if(result.getStatus() == ITestResult.SUCCESS)

@@ -3,14 +3,20 @@
  */
 package Base;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -78,6 +84,21 @@ public class BrowserFactory {
 			// return driver;
 		}
 		return driver;
+	}
+	
+	public  void captureScreenshot() throws IOException
+	{
+		/*
+		 * SimpleDateFormat formatter = new SimpleDateFormat("ddMMyyyy_HHmmss"); Date
+		 * date = new Date();
+		 */
+		String pattern = "yyyy-MM-dd_HHmmss";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+
+		String date = simpleDateFormat.format(new Date());
+	     	    
+		 File screenshotFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		 FileUtils.copyFile(screenshotFile, new File("C:\\Rahil_ss\\image"+date+".png"));
 	}
 
 	public Object[][] getExcelData(String testCaseName, String fileName) throws IOException
