@@ -34,7 +34,7 @@ public class ActionClassTest {
 		 action.moveToElement(GmailLink).click().perform(); //To click element using action
 		 action.dragAndDrop(SearchByVoice, GmailLink).build().perform(); //to drag and drop
 		 action.contextClick(GmailLink).perform(); //Right click
-		 
+				 
 		 Thread.sleep(5000);
 		 driver.navigate().back();
 		 Thread.sleep(3000);

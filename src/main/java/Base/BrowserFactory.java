@@ -74,6 +74,7 @@ public class BrowserFactory {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver(options);
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+			driver.manage().window().maximize();
 			// return driver;
 		}
 

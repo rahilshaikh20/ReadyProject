@@ -10,22 +10,23 @@ public class StringFunctions {
 		String S1 ="This is my place";
 		String S2 = S1;
 		
-	
-		S2.split("g");
+		
 		System.out.println(S1.length());
 	
 		
-		/*System.out.println(S1.contains("the best"));
+		System.out.println(S1.contains("the best"));
 		System.out.println(S1.trim());
 		System.out.println(S1.toUpperCase());
 		System.out.println(S1.concat(S2));
 		System.out.println(S1.getClass());
-		*/
-			
 		
+			
+	
 		
 		String blogName = "how to do in java and python";
 		StringBuilder reverseString = new StringBuilder();
+		
+		
 		 
 		String[] words = blogName.split(" ");  //step 1
 		 

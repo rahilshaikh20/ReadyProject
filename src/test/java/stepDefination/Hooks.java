@@ -13,29 +13,32 @@ public class Hooks {
 	
 	public static WebDriver driver;
 
-	/*
-	 * @Before public static void Initialize() {
-	 * 
-	 * if (driver==null) { //System.setProperty("webdriver.chrome.driver",
-	 * "D:\\Users\\rahilsha\\Downloads\\chromedriver.exe");
-	 * WebDriverManager.chromedriver().setup(); driver=new ChromeDriver();
-	 * driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-	 * driver.manage().window().maximize();
-	 * 
-	 * }
-	 * 
-	 * }
-	 * 
-	 * public static WebDriver getDriver() { return driver; // new
-	 * Test_Steps(driver);
-	 * 
-	 * }
-	 * 
-	 * @After public void TearDown() {
-	 * 
-	 * driver.quit(); driver=null;
-	 * 
-	 * }
-	 */
+	
+	  @Before 
+	  public static void Initialize() {
+	  
+	  if (driver==null) { 
+		  //System.setProperty("webdriver.chrome.driver","D:\\Users\\rahilsha\\Downloads\\chromedriver.exe");
+	  WebDriverManager.chromedriver().setup(); 
+	  driver=new ChromeDriver();
+	  driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+	  driver.manage().window().maximize();
+	  
+	  }
+	  
+	  }
+	  
+	  public static WebDriver getDriver() 
+	  {
+		  return driver; // newTest_Steps(driver);
+	  }
+	  
+	  @After 
+	  public void TearDown() 
+	  {	  
+	  driver.quit(); 
+	  driver=null;
+	  }
+	 
 
 }

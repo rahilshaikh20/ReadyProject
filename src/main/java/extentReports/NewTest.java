@@ -1,5 +1,6 @@
 package extentReports;
 
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
@@ -23,7 +24,7 @@ class NewTest extends ExtReportDemo
 	        
 	    }
 	     
-	    @Test
+	    @Test(enabled = false)
 	    public void functionality2Test2()
 	    {
 	        test = extent.createTest("functionality2Test2");
@@ -42,6 +43,17 @@ class NewTest extends ExtReportDemo
 	     
 	    }
 	    
+	    @AfterSuite
+	    public void afterExecution()
+	    {
+	    	final int total =passedCount+failedCount+skippedCount;
+	    	
+	    	System.out.println("Passed count is: "+passedCount);
+	    	System.out.println("Failed count is: "+failedCount);
+	    	System.out.println("Skipped count is: "+skippedCount);
+	    	System.out.println("Total testcases executed: "+total);
+	    	
+	    }
 	  
 		
 	}

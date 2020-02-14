@@ -55,7 +55,9 @@ public class AlertsDemo {
 		
       // Displaying updated alert message		
       System.out.println(alertMessage1);	
+     
       }
+      
             
  }
   

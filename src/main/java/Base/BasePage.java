@@ -30,8 +30,7 @@ public class BasePage {
 			driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 			driver.manage().deleteAllCookies();
 			driver.manage().window().maximize();
-
-		}
+			}
 		return driver;
 	}
 

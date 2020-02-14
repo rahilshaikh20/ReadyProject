@@ -2,19 +2,22 @@ package javaPractice;
 
 public abstract class AbsSample {
 	
-	abstract void fun();
+	 void fun() {
+	}
+	
 	
 	
 	void fun1()
 	{
-		System.out.println("Abs");
+		System.out.println("AbsSample");
 		
 		}
 	
-	static void fun2()
+	 void fun2()
 	
 	{
-		System.out.println("Static func");
+		System.out.println("Fun from PARENT");
 	}
 
+	 
 }

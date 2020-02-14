@@ -2,36 +2,34 @@ package javaPractice;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.DataProvider;
+import org.codehaus.groovy.ast.stmt.TryCatchStatement;
 import org.testng.annotations.BeforeTest;
 
 public class SampleTest 
 {
-	
-	int result;
-	
 
-int fact(int n)
-
-{
-	if(n==1)
-	return 1;	
+	public static void main(String[] args) throws Exception {
 		
-	result=n*fact(n-1);
+
+		try
+		{
+			badMethod();
+			System.out.println("A");
+			
+		}
+		catch(Exception e)
+		{
+			System.out.println("B");
+			
+		}
+		finally
+		{
+			System.out.println("C");
+		}
+		System.out.println("D");
 		
-	return result;
-
-}
-
-
-public static void main(String[] args) {
+	}
 	
-	
-	SampleTest a = new SampleTest();
-	
-	System.out.println(a.fact(6));
-	
-}
-
-
+	public static void badMethod() {}
 
 }

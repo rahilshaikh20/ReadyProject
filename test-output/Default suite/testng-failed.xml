@@ -8,19 +8,12 @@
           <include name="getResult"/>
           <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="bf"/>
           <include name="TC_0001"/>
           <include name="TearDown"/>
+          <include name="AfterTest"/>
         </methods>
       </class> <!-- javaPractice.TC001 -->
-      <class name="javaPractice.TC003">
-        <methods>
-          <include name="TearDown"/>
-          <include name="getResult"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="TC_0003"/>
-        </methods>
-      </class> <!-- javaPractice.TC003 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -18,9 +18,7 @@ public class JavaConn {
 			Class.forName("oracle.jdbc.OracleDriver");
 
 			Connection conn = null;
-			 conn = DriverManager.getConnection(dbURL,
-			                                     "system",
-			                                     "rahil");	
+			 conn = DriverManager.getConnection(dbURL,"system", "rahil");	
 			
 			
 		//step3 create the statement object  

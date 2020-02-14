@@ -19,7 +19,7 @@ public class SendEmailReport {
 		
 		  EmailAttachment attachment = new EmailAttachment();
 		  attachment.setPath
-		  ("C:\\Users\\rahil.shaikh\\Documents\\SeleniumProjects\\ReadyProject\\target\\cucumber-reports\\report_rahil.html");
+		  ("C:\\Users\\rahil.shaikh\\Documents\\SeleniumProjects\\ReadyProject\\test-output\\Rahil_Report.html");
 		  attachment.setDisposition(EmailAttachment.ATTACHMENT);
 		  attachment.setDescription("Attached cucumber report");
 		  attachment.setName("Rahil_Report.html");

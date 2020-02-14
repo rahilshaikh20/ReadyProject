@@ -27,6 +27,7 @@ public class SingletonTestCase {
 		
 		driver.get("https://github.com/");
 		System.out.println(driver.getTitle());
+		assert false;
 
 	}
 

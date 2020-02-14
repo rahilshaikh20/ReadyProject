@@ -7,15 +7,18 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
  
 public class GetScreenShot {
+	
+	public static int count=0;
      
-    public static String capture(WebDriver driver,String screenShotName) throws IOException
+    public static void captureScreenshot(WebDriver driver) throws IOException
+   
     {
+    	
         TakesScreenshot ts = (TakesScreenshot)driver;
         File source = ts.getScreenshotAs(OutputType.FILE);
-        String dest = System.getProperty("user.dir") +"\\ErrorScreenshots\\"+screenShotName+".png";
+        String dest = System.getProperty("user.dir") +"\\ErrorScreenshots\\"+count+".png";
         File destination = new File(dest);
         FileUtils.copyFile(source, destination);        
-                     
-        return dest;
+        count++;
     }
 }

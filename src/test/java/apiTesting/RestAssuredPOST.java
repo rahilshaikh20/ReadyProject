@@ -20,7 +20,7 @@ public class RestAssuredPOST {
 	 
 	 JSONObject requestParams = new JSONObject();
 	 //requestParams.put("id", "00123526"); 
-	 requestParams.put("name", "Keval");
+	 requestParams.put("name", "Rushikesh");
 	 requestParams.put("salary", "600000"); 
 	 requestParams.put("age", "19"); 
 	

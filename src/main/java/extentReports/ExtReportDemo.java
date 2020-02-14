@@ -25,8 +25,12 @@ public class ExtReportDemo
     public static ExtentHtmlReporter htmlReporter;
     public static ExtentReports extent;
     public static ExtentTest test;
+    
+    public static int passedCount=0;
+    public static int failedCount=0;
+    public static int skippedCount=0;
    
-         
+             
     @BeforeSuite
     public void setUp()
     {
@@ -52,21 +56,31 @@ public class ExtReportDemo
     {
         if(result.getStatus() == ITestResult.FAILURE)
         {
-        	String str=BasePage.captureScreenshot();
+			/*
+			 * if (driver!=null) { String str=BasePage.captureScreenshot();
+			 * test.addScreenCaptureFromPath(str); }
+			 */
+        	
             test.log(Status.FAIL, MarkupHelper.createLabel(result.getName()+" Test case FAILED due to below issues:", ExtentColor.RED));
             test.fail(result.getThrowable());
+            
+            String str=BasePage.captureScreenshot();
             test.addScreenCaptureFromPath(str); //attaching screenshots to failed test cases
-          
+        
+            
+            failedCount++;
             
         }
         else if(result.getStatus() == ITestResult.SUCCESS)
         {
             test.log(Status.PASS, MarkupHelper.createLabel(result.getName()+" Test Case PASSED", ExtentColor.GREEN));
+            passedCount++;
         }
         else
         {
             test.log(Status.SKIP, MarkupHelper.createLabel(result.getName()+" Test Case SKIPPED", ExtentColor.ORANGE));
             test.skip(result.getThrowable());
+            skippedCount++;
         }
     }
      
