@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="92" started-at="2019-10-02T08:52:33 IST" finished-at="2019-10-02T08:52:33 IST">
+  <suite name="Default suite" duration-ms="15391" started-at="2020-03-03T17:45:30 IST" finished-at="2020-03-03T17:45:45 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="92" started-at="2019-10-02T08:52:33 IST" finished-at="2019-10-02T08:52:33 IST">
-      <class name="javaPractice.Sample">
-        <test-method status="PASS" signature="TC_0002()[pri:0, instance:javaPractice.Sample@2bbaf4f0]" name="TC_0002" duration-ms="16" started-at="2019-10-02T08:52:33 IST" finished-at="2019-10-02T08:52:33 IST">
+    <test name="Default test" duration-ms="15391" started-at="2020-03-03T17:45:30 IST" finished-at="2020-03-03T17:45:45 IST">
+      <class name="apiTesting.JsonPathDataSearch_POST">
+        <test-method status="PASS" signature="POST_Service()[pri:0, instance:apiTesting.JsonPathDataSearch_POST@2bbaf4f0]" name="POST_Service" duration-ms="15301" started-at="2020-03-03T17:45:30 IST" finished-at="2020-03-03T17:45:45 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_0002 -->
-      </class> <!-- javaPractice.Sample -->
+        </test-method> <!-- POST_Service -->
+      </class> <!-- apiTesting.JsonPathDataSearch_POST -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
