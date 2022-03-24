@@ -52,7 +52,11 @@ public class ExtReportDemo
     {
         if(result.getStatus() == ITestResult.FAILURE)
         {
-        	String str=BasePage.captureScreenshot();
+            WebDriver driver;
+        	driver=(WebDriver)result.getTestClass().getRealClass().getDeclaredField("driver").get(result.getInstance());
+        	//Get the driver instance from the running Test Class
+            
+        	String str=BasePage.captureScreenshot(driver);
             test.log(Status.FAIL, MarkupHelper.createLabel(result.getName()+" Test case FAILED due to below issues:", ExtentColor.RED));
             test.fail(result.getThrowable());
             test.addScreenCaptureFromPath(str); //attaching screenshots to failed test cases
