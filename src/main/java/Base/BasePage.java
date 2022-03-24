@@ -42,7 +42,7 @@ public class BasePage {
 
 	}
 	
-	public static String captureScreenshot() throws IOException
+	public static String captureScreenshot(WebDriver driver) throws IOException
 	{
 		
 		String pattern = "yyyy-MM-dd_HHmmss";
